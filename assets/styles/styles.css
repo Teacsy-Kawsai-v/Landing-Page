@@ -1,0 +1,72 @@
+/* General Styles */
+* {
+  font-family: 'IBM Plex Sans', sans-serif;
+}
+body {
+  margin: 0;
+}
+a {
+  text-decoration: none;
+}
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+header {
+  width: 100%;
+  background-color: #6898C7;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+}
+footer {
+  width: 100%;
+}
+
+/* Benefits Section */
+
+.benefits-section {
+  padding: 4.5rem 0 2rem;
+}
+.section-title {
+  color: #6898C7;
+  font-size: 28px;
+}
+.benefits-container {
+  max-width: 1124px;
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+.benefit-data {
+  text-align: center;
+}
+.benefits-image {
+  width: 60%;
+}
+@media screen and (min-width: 1024px) {
+  .benefits-container {
+    max-width: none;
+    margin-left: 4.5rem;
+    margin-right: 4.5rem;
+  }
+  .benefits {
+    display: flex;
+    align-items: center;
+    column-gap: 5rem;
+    justify-content: center;
+  }
+  #benefits-2 {
+    flex-direction: row-reverse;
+  }
+  .benefit-data {
+    width: 50%;
+  }
+  .benefits-image {
+    width: 28%;
+  }
+}
