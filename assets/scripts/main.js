@@ -15,7 +15,8 @@ if(navClose){
     })
 }
 
-const navLink = document.querySelectorAll('.nav-link')
+const navLink = document.querySelectorAll('.nav-link') 
+
 
 const linkAction = () => {
     const navMenu = document.getElementById('nav-menu')
