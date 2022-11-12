@@ -25,6 +25,104 @@ footer {
   width: 100%;
 }
 
+/* Navigation Bar */
+
+.nav-container {
+  max-width: 1124px;
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
+  height: 3.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 4px;
+  padding-bottom: 4px;
+}
+/* Logo Container */
+
+.logo-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  column-gap: 4px;
+}
+.logo-image {
+  width: 56px;
+}
+.logo-text {
+  font-weight: 500;
+  font-size: 20px;
+  color: #FFC828;
+}
+/* Menu Container */
+
+.nav-toggle {
+  display: flex;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+.nav-list {
+  padding: 5rem 0 0 3rem;
+  display: flex;
+  flex-direction: column;
+  row-gap: 2.5rem;
+}
+.nav-link {
+  color: black;
+  transition: color .3s;
+}
+
+.nav-link:hover {
+  color: blue;
+}
+.nav-close {
+  position: absolute;
+  top: 1rem;
+  right: 1.5rem;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 1023px) {
+  .nav-menu {
+    position: fixed;
+    background-color: white;
+    top: 0;
+    right: -100%;
+    width: 50%;
+    height: 100%;
+
+    transition: right .3s;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .nav-menu {
+    position: fixed;
+    background-color: transparent;
+    right: 24px;
+  }
+  .nav-link {
+    font-weight: 500;
+    color: white;
+    font-size: 16px;
+  }
+  .nav-list {
+    display: flex;
+    flex-direction: row;
+    column-gap: 24px;
+    padding: 0px;
+  }
+  .nav-toggle,
+  .nav-close{
+    display: none;
+  }
+
+}
+
+.show-menu {
+  right: 0;
+}
+
 /* Benefits Section */
 
 .benefits-section {
