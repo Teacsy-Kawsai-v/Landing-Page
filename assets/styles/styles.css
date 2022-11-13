@@ -1,0 +1,240 @@
+/* General Styles */
+* {
+  font-family: 'IBM Plex Sans', sans-serif;
+}
+body {
+  margin: 0;
+}
+a {
+  text-decoration: none;
+}
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+header {
+  width: 100%;
+  background-color: #6898C7;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+}
+footer {
+  width: 100%;
+}
+
+/* Navigation Bar */
+
+.nav-container {
+  max-width: 1124px;
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
+  height: 3.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 4px;
+  padding-bottom: 4px;
+}
+/* Logo Container */
+
+.logo-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  column-gap: 4px;
+}
+.logo-image {
+  width: 56px;
+}
+.logo-text {
+  font-weight: 500;
+  font-size: 20px;
+  color: #FFC828;
+}
+/* Menu Container */
+
+.nav-toggle {
+  display: flex;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+.nav-list {
+  padding: 5rem 0 0 3rem;
+  display: flex;
+  flex-direction: column;
+  row-gap: 2.5rem;
+}
+.nav-link {
+  color: black;
+  transition: color .3s;
+}
+
+.nav-link:hover {
+  color: blue;
+}
+.nav-close {
+  position: absolute;
+  top: 1rem;
+  right: 1.5rem;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 1023px) {
+  .nav-menu {
+    position: fixed;
+    background-color: white;
+    top: 0;
+    right: -100%;
+    width: 50%;
+    height: 100%;
+
+    transition: right .3s;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .nav-menu {
+    position: fixed;
+    background-color: transparent;
+    right: 24px;
+  }
+  .nav-link {
+    font-weight: 500;
+    color: white;
+    font-size: 16px;
+  }
+  .nav-list {
+    display: flex;
+    flex-direction: row;
+    column-gap: 24px;
+    padding: 0px;
+  }
+  .nav-toggle,
+  .nav-close{
+    display: none;
+  }
+
+}
+
+.show-menu {
+  right: 0;
+}
+
+/* Hero Section */
+.hero-section {
+  padding: 4.5rem 0 2rem;
+}
+.hero-container {
+  max-width: 1124px;
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
+  display: flex;
+  padding-top: 1rem;
+  row-gap: 3rem;
+  flex-direction: column;
+  align-items: center;
+}
+.hero-info {
+  text-align: center;
+}
+.title {
+  font-weight: bold;
+  font-size: 30px;
+  color: #FFB30D;
+}
+.description {
+  font-weight: 400;
+  margin-bottom: 2.5rem;
+}
+.hero-image {
+  width: 240px;
+}
+.hero-button {
+  padding: 15px 25px;
+  font-size: 18px;
+  font-weight: 500;
+  color: white;
+  border-radius: 10px;
+  letter-spacing: 0.25px;
+  background-color: #6898C7;
+  cursor: pointer;
+  box-shadow: 1px 1px 8px #6898C7;
+  transition: 0.5s;
+}
+.hero-button:hover {
+  background-color: #3F5B78;
+}
+@media screen and (min-width: 1024px) {
+  .hero-container {
+    max-width: none;
+    flex-direction: row;
+    align-items: center;
+    margin-left: 4.5rem;
+    margin-right: 4.5rem;
+  }
+  .title {
+    font-size: 40px;
+  }
+  .description {
+    font-size: 20px;
+  }
+  .hero-info {
+    text-align: left;
+  }
+  .hero-image {
+    width: 50%;
+  }
+  .hero-button {
+    padding-left: 20%;
+    padding-right: 20%;
+  }
+}
+
+/* Benefits Section */
+
+.benefits-section {
+  padding: 4.5rem 0 2rem;
+}
+.section-title {
+  color: #6898C7;
+  font-size: 28px;
+}
+.benefits-container {
+  max-width: 1124px;
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+.benefit-data {
+  text-align: center;
+}
+.benefits-image {
+  width: 60%;
+}
+@media screen and (min-width: 1024px) {
+  .benefits-container {
+    max-width: none;
+    margin-left: 4.5rem;
+    margin-right: 4.5rem;
+  }
+  .benefits {
+    display: flex;
+    align-items: center;
+    column-gap: 5rem;
+    justify-content: center;
+  }
+  #benefits-2 {
+    flex-direction: row-reverse;
+  }
+  .benefit-data {
+    width: 50%;
+  }
+  .benefits-image {
+    width: 28%;
+  }
+}
