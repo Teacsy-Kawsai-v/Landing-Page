@@ -330,3 +330,67 @@ footer {
     height: 50vh;
   }
 }
+
+/* Pricing Section */
+
+.pricing-section {
+  padding: 4.5rem 0 2rem;
+}
+.pricing-container {
+  max-width: 1124px;
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.pricing-plans {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 48px;
+}
+.pricing-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 70%;
+  background-color: white;
+  box-shadow: 1px 1px 10px #3F5B78;
+  padding-right: 32px;
+  padding-left: 32px;
+  padding-bottom: 24px;
+  row-gap: 24px;
+}
+.benefit-item-card {
+  display: flex;
+  align-items: center;
+  text-align: left;
+  column-gap: 14px;
+}
+.button-card{
+  cursor: pointer;
+  padding: 12px 20%;
+  color: white;
+  font-weight: 500;
+  font-size: 18px;
+  background-color: #6898C7;
+  border-radius: 8px;
+  transition: 0.5s;
+}
+
+.button-card:hover {
+  background-color: #3F5B78;
+}
+@media screen and (min-width: 1024px) {
+  .pricing-container {
+    max-width: none;
+    align-items: center;
+  }
+  .pricing-plans {
+    flex-direction: row;
+    column-gap: 124px;
+  }
+}
