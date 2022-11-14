@@ -444,3 +444,31 @@ footer {
     column-gap: 48px;
   }
 }
+
+/* About The App Section */
+
+.aboutTheTeam-section {
+  padding: 4.5rem 0 2rem;
+}
+
+.aboutTheTeam-container {
+  max-width: 1124px;
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.aboutTheTeam-video {
+  width: 100%;
+  height: 60vh;
+}
+@media screen and (min-width: 1024px) {
+  .aboutTheTeam-container {
+    max-width: none;
+  }
+  .aboutTheTeam-video {
+    width: 50%;
+  }
+}
