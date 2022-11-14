@@ -238,3 +238,282 @@ footer {
     width: 28%;
   }
 }
+
+/* About The App Section */
+
+.aboutTheApp-section {
+  padding: 4.5rem 0 2rem;
+  text-align: center;
+  background-color: #D4E7FA;
+}
+
+.aboutTheApp-container {
+  max-width: 1124px;
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.aboutTheApp-data {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.aboutTheApp-video {
+  width: 100%;
+  height: 40vh;
+}
+
+/* Download Buttons */
+.download-buttons {
+  display: flex;
+  flex-direction: column;
+  row-gap: 4px;
+}
+.download {
+  width: 200px;
+  height: 75px;
+  background: black;
+  float: left;
+  border-radius: 5px;
+  position: relative;
+  color: #fff;
+  cursor: pointer;
+  border: 1px solid #fff;
+}
+
+.download > .fa {
+  color: #fff;
+  position: absolute;
+  top: 50%;
+  left: 15px;
+  transform: translateY(-50%);
+}
+
+.df,
+.dfn {
+  position: absolute;
+  left: 80px;
+}
+
+.df {
+  top: 20px;
+  font-size: .68em;
+}
+
+.dfn {
+  top: 33px;
+  font-size: 1.08em;
+}
+
+.download:hover {
+  -webkit-filter: invert(100%);
+  filter: invert(100%);
+}
+
+@media screen and (min-width: 1024px) {
+  .aboutTheApp-container {
+    max-width: none;
+    flex-direction: row-reverse;
+    column-gap: 64px;
+  }
+  .download-buttons {
+    flex-direction: row;
+    column-gap: 24px;
+  }
+  .description {
+    text-align: left;
+  }
+  .aboutTheApp-video {
+    height: 50vh;
+  }
+}
+
+/* Pricing Section */
+
+.pricing-section {
+  padding: 4.5rem 0 2rem;
+}
+.pricing-container {
+  max-width: 1124px;
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.pricing-plans {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 48px;
+}
+.pricing-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 70%;
+  background-color: white;
+  box-shadow: 1px 1px 10px #3F5B78;
+  padding-right: 32px;
+  padding-left: 32px;
+  padding-bottom: 24px;
+  row-gap: 24px;
+}
+.benefit-item-card {
+  display: flex;
+  align-items: center;
+  text-align: left;
+  column-gap: 14px;
+}
+.button-card{
+  cursor: pointer;
+  padding: 12px 20%;
+  color: white;
+  font-weight: 500;
+  font-size: 18px;
+  background-color: #6898C7;
+  border-radius: 8px;
+  transition: 0.5s;
+}
+
+.button-card:hover {
+  background-color: #3F5B78;
+}
+@media screen and (min-width: 1024px) {
+  .pricing-container {
+    max-width: none;
+    align-items: center;
+  }
+  .pricing-plans {
+    flex-direction: row;
+    column-gap: 124px;
+  }
+}
+
+/* Testimonials Section */
+.testimonials-section {
+  padding: 4.5rem 0 2rem;
+}
+
+.testimonials-container {
+  max-width: 1124px;
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.testimonial-card {
+  padding: 15px 25px;
+  background-color: #FFDA70;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  margin-bottom: 24px;
+  border-radius: 15px;
+  justify-content: space-between;
+}
+.testimonials-cards {
+  display: flex;
+  flex-direction: column;
+}
+.testimonial-card-description {
+  font-size: 18px;
+  font-weight: 400;
+}
+.testimonial-card-title {
+  margin: 0;
+}
+.testimonial-card-subtitle {
+  margin: 0;
+}
+.testimonial-content-card {
+  display: flex;
+  align-items: center;
+}
+
+@media screen and (min-width: 1024px) {
+  .testimonials-container {
+    max-width: none;
+  }
+  .testimonials-cards {
+    flex-direction: row;
+    column-gap: 48px;
+  }
+}
+
+/* About The App Section */
+
+.aboutTheTeam-section {
+  padding: 4.5rem 0 2rem;
+}
+
+.aboutTheTeam-container {
+  max-width: 1124px;
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.aboutTheTeam-video {
+  width: 100%;
+  height: 60vh;
+}
+@media screen and (min-width: 1024px) {
+  .aboutTheTeam-container {
+    max-width: none;
+  }
+  .aboutTheTeam-video {
+    width: 50%;
+  }
+}
+/* Footer */
+
+.footer-section {
+  padding: 4.5rem 0 2rem;
+  background-color: #6898C7;
+}
+
+.footer-container{
+  max-width: 1124px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
+}
+.footer-item-list {
+  display: flex;
+  flex-direction: row;
+  column-gap: 8px;
+  align-items: center;
+}
+.social-info {
+  text-align: center;
+}
+.social-icons{
+  display: flex;
+  flex-direction: row;
+  column-gap: 8px;
+}
+.fa-brands {
+  font-size: 40px;
+  color: black;
+}
+.footer-link {
+  color: black;
+}
+@media screen and (min-width: 1024px) {
+  .footer-container {
+    max-width: none;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-left: 4rem;
+    margin-right: 4rem;
+  }
+}
