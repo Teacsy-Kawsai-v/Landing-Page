@@ -83,6 +83,46 @@ footer {
   cursor: pointer;
 }
 
+/* Change language button */
+
+.es,
+.en {
+  color: black;
+  font-weight: 500;
+}
+
+.check {
+  cursor: pointer;
+  position: relative;
+  width: 52px;
+}
+.check:before {
+  content: '';
+  position: absolute;
+  width: 50px;
+  height: 25px;
+  background: #333;
+  border-radius: 25px;
+}
+.check:after {
+  content: '';
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  background: #fff;
+  border-radius: 25px;
+  transition: 0.25s;
+  border: 2px solid #333;
+  box-sizing: border-box;
+}
+.check:checked:after {
+  left: 25px;
+  border: 2px solid #00a1ff;
+}
+.check:checked:before {
+  background: #00a1ff;
+}
+
 @media screen and (max-width: 1023px) {
   .nav-menu {
     position: fixed;
@@ -116,7 +156,11 @@ footer {
   .nav-close{
     display: none;
   }
-
+  .es,
+  .en {
+    color: white;
+    font-weight: 500;
+  }
 }
 
 .show-menu {
